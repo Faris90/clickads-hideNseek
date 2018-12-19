@@ -53,6 +53,7 @@ Zombie.prototype.makeZombie = function (player) {
     }
     // change color of cell
     player.cells[i].color = this.zombieColor;
+       player.cells[i].spiked = true;
     // add cell to zombie array
     this.zombies.push(player.cells[i]);
   }
