@@ -43,7 +43,7 @@ Zombie.prototype.leaderboardAddSort = function (player, leaderboard) {
 Zombie.prototype.makeZombie = function (player) {
   // turns a player into a zombie
   player.team = 0;
-  player.spiked = true;
+ // player.spiked = true;
   player.color = this.zombieColor;
   for (var i = 0; i < player.cells.length; i++) {
     // remove cell from players array
@@ -53,7 +53,7 @@ Zombie.prototype.makeZombie = function (player) {
     }
     // change color of cell
     player.cells[i].color = this.zombieColor;
-       player.cells[i].spiked = true;
+      // player.cells[i].spiked = true;
     // add cell to zombie array
     this.zombies.push(player.cells[i]);
   }
